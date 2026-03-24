@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aula05</title>
+	<style>
+		*{box-sizing: border-box;
+			margin: 0;
+			padding: 0;}
+
+		body{
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+		.article{
+			width: 100%;
+		}
+		.metade{
+			width: 60%;
+			float: left;
+		}
+		.outra{
+			width: 40%;
+			float: left;
+		}
+		h1{
+			font-size: clamp(6rem, 2vw, 1rem);
+			white-space: nowrap;
+			width: 80%;
+			margin-left: 20%;
+		}
+		#esq{width: 20%;
+		float: left;
+		margin-left: 20%;
+		margin-right: 20%;
+		background-color: orange;
+	}
+		#dir{width: 20%
+		float: left;
+		margin-right: 20%;
+		background-color: red;
+	}
+	.baixo{
+		background-color: gray;
+	}
+	@media screen and (max-width: 1050px){
+		h1{
+			font-size: clamp(4rem, 4vw, 1rem);
+		}
+	}
+@media screen and (max-width: 800px){
+		h1{
+			font-size: clamp(3rem, 4vw, 1rem);
+		}
+	}
+
+	</style>
+
+</head>
+<body>
+	<main>
+		<article>
+			<section class="metade">
+				<div class="cima"><h1>Metade<br>e tudoooooo</h1></div>
+				<div class="baixo"><p id="esq">botão</p><p id="dir">botão</p></div>
+			</section>
+			<section class="outra"><img src="imagens/renan.jpg" width="100%">
+			</section>
+		</article>
+		<aside><img src="imagens/renan1.jpg" width="100%"></aside>
+		<img src="imagens/renan2.jpg" width="80%">
+	</main>
+
+</body>
+</html>
